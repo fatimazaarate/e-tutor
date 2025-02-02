@@ -1,23 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  content: [
+    "./index.html", // Looks for utility classes in index.html
+    "./src/**/*.{js,ts,jsx,tsx}", // Looks for utility classes in JS/TS/JSX/TSX files inside the src folder
+  ],
   theme: {
-    extend: {
-      colors: {
-        primary: "#ffcf3a",
-        secondary: "#0063ff",
-      },
-      container: {
-        center: true,
-        padding: {
-          DEFAULT: "1rem",
-          sm: "2rem",
-          lg: "4rem",
-          xl: "5rem",
-          "2xl": "6rem",
-        },
-      },
-    },
+    extend: {}, // You can extend your theme here (e.g., custom colors, fonts, etc.)
   },
   plugins: [],
 };
